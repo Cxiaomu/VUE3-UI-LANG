@@ -3,11 +3,18 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
+import i18n from '@/lang/index'
+
 // ElementPlus
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-import i18n from '@/lang/index'
+// Quasar
+// import { Quasar } from 'quasar'
+// import '@quasar/extras/material-icons/material-icons.css'
+// import 'quasar/src/css/index.sass'
+// import langDe from 'quasar/lang/de'
+
 
 
 import App from './App.vue'
@@ -19,6 +26,10 @@ app.use(createPinia())
 app.use(router)
 
 app.use(ElementPlus) // ElementPlus
+// app.use(Quasar, {
+//   lang: langDe,
+//   plugins: {}, // import Quasar plugins and add here
+// })
 
 app.use(i18n)
 

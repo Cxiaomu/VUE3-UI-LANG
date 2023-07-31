@@ -13,7 +13,9 @@ console.log(i18n.global.locale.value)
 
 <template>
   <el-config-provider :locale="locale">
-    <RouterView />
+    <a-config-provider :locale="locale">
+      <RouterView />
+    </a-config-provider>
   </el-config-provider>
 </template>
 <style scoped>
