@@ -10,6 +10,7 @@ declare module 'vue' {
     AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
     AEmpty: typeof import('ant-design-vue/es')['Empty']
     AntCom: typeof import('./src/components/AntCom.vue')['default']
+    BooCom: typeof import('./src/components/BooCom.vue')['default']
     EleCom: typeof import('./src/components/EleCom.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']

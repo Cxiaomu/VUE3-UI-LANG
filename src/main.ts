@@ -15,7 +15,9 @@ import 'element-plus/dist/index.css'
 // import 'quasar/src/css/index.sass'
 // import langDe from 'quasar/lang/de'
 
-
+// bootstrap 
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 
 import App from './App.vue'
 import router from './router'
