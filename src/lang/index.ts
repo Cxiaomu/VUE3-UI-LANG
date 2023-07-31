@@ -11,29 +11,37 @@ import EleZhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import AntAr from 'ant-design-vue/es/locale/ar_EG'
 import AntFr from 'ant-design-vue/es/locale/fr_FR'
 import AntPt from 'ant-design-vue/es/locale/pt_PT'
-import AntEn from 'ant-design-vue/es/locale/en_GB'
+import AntEn from 'ant-design-vue/es/locale/en_US'
 import AntZh from 'ant-design-vue/es/locale/zh_CN'
+
+// native UI
+import { arDZ, frFR, ptBR , zhCN, enUS, } from 'naive-ui'
 
 const messages = {
   ar: {
     ...EleAr,
     ...AntAr,
+    ...arDZ,
   },
   fr: {
     ...EleFr,
     ...AntFr,
+    ...frFR,
   },
   pt: {
     ...ElePt,
     ...AntPt,
+    ...ptBR,
   },
   en: {
     ...EleEn,
     ...AntEn,
+    ...enUS,
   },
   zh: {
     ...EleZhCn,
-    ...AntZh
+    ...AntZh,
+    ...zhCN,
   },
  
 }

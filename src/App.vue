@@ -2,6 +2,7 @@
 import { computed } from 'vue';
 import { RouterView } from 'vue-router'
 import { ElConfigProvider } from 'element-plus'
+import { NConfigProvider } from 'naive-ui'
 // import { getCurrLang } from "./utils/common"
 
 import i18n from './lang';
@@ -14,10 +15,10 @@ console.log(i18n.global.locale.value)
 <template>
   <el-config-provider :locale="locale">
     <a-config-provider :locale="locale">
-      <RouterView />
+      <n-config-provider :locale="locale">
+        <RouterView />
+      </n-config-provider>
     </a-config-provider>
   </el-config-provider>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>
