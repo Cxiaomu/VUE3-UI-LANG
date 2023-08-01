@@ -8,14 +8,14 @@ import { NConfigProvider } from 'naive-ui'
 import i18n from './lang';
 const locale = computed(() => (i18n.global.messages.value[i18n.global.locale.value]))
 console.log(i18n.global.messages.value[i18n.global.locale.value])
-
+console.log(i18n.global.messages.value)
 console.log(i18n.global.locale.value)
 </script>
 
 <template>
-  <el-config-provider :locale="locale">
-    <a-config-provider :locale="locale">
-      <n-config-provider :locale="locale">
+  <el-config-provider :locale="locale.ele">
+    <a-config-provider :locale="locale.ant">
+      <n-config-provider :locale="locale.nai">
         <RouterView />
       </n-config-provider>
     </a-config-provider>

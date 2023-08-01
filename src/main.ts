@@ -9,6 +9,8 @@ import i18n from '@/lang/index'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
+// ant-design-vue
+import { ConfigProvider } from 'ant-design-vue'
 // Quasar
 // import { Quasar } from 'quasar'
 // import '@quasar/extras/material-icons/material-icons.css'
@@ -28,6 +30,7 @@ app.use(createPinia())
 app.use(router)
 
 app.use(ElementPlus) // ElementPlus
+app.use(ConfigProvider) // ant-design-vueant-design-vues
 // app.use(Quasar, {
 //   lang: langDe,
 //   plugins: {}, // import Quasar plugins and add here
