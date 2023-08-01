@@ -73,4 +73,5 @@ const confirm = () => {
   </div>
 </template>
 <style lang="scss" scoped>
-// </style>
+// 
+</style>
